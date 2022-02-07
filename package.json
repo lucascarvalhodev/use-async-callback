@@ -5,7 +5,7 @@
   "description": "",
   "main": "src/index.ts",
   "scripts": {
-    "build": "webpack --mode=production && tsc"
+    "build": "webpack --mode=production && tsc && npm version patch -git-tag-version false && xcopy package.json dist && npm publish dist"
   },
   "keywords": [],
   "author": "",
